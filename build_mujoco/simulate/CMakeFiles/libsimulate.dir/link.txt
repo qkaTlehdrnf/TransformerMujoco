@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc ../lib/liblibsimulate.a CMakeFiles/libsimulate.dir/glfw_dispatch.cc.o CMakeFiles/libsimulate.dir/simulate.cc.o CMakeFiles/libsimulate.dir/uitools.cc.o CMakeFiles/libsimulate.dir/macos_save.mm.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib ../lib/liblibsimulate.a
