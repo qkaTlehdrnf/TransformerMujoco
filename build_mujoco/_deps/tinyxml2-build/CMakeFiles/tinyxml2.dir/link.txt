@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc ../../lib/libtinyxml2.a CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib ../../lib/libtinyxml2.a

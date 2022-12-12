@@ -1,0 +1,4 @@
+.bashrc
+*.txt
+!*
+bin/

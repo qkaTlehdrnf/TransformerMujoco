@@ -1,0 +1,732 @@
+<robot name="onshape">
+    <mujoco>
+        <compiler fusestatic="false" inertiafromgeom="false" />
+    </mujoco>
+    <link name="part_1">
+        <visual>
+            <origin xyz="-0.00500303 0.00768839 -0.0119004" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///part_1.stl" />
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.231373 0.380392 0.705882 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.00500303 0.00768839 -0.0119004" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///part_1.stl" />
+            </geometry>
+            <material name="part_1_material">
+                <color rgba="0.231373 0.380392 0.705882 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.00500303 0.00768839 0.00609961" rpy="0 0 0" />
+            <mass value="1.4693" />
+            <inertia ixx="0.00119546" ixy="0" ixz="0" iyy="0.00226565" iyz="0" izz="0.00314375" />
+        </inertial>
+    </link>
+
+    <link name="arm5">
+        <visual>
+            <origin xyz="0.0455 -0.0205 0.019" rpy="-1.5708 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm5.stl" />
+            </geometry>
+            <material name="arm5_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0455 -0.0205 0.019" rpy="-1.5708 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm5.stl" />
+            </geometry>
+            <material name="arm5_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.00577778 0 0.019" rpy="0 0 0" />
+            <mass value="0.0156937" />
+            <inertia ixx="5.06341e-06" ixy="0" ixz="0" iyy="5.35559e-06" iyz="0" izz="1.92694e-06" />
+        </inertial>
+    </link>
+
+    <link name="arm4">
+        <visual>
+            <origin xyz="0 -0.0205 0.06" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package:///arm4.stl" />
+            </geometry>
+            <material name="arm4_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.0205 0.06" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package:///arm4.stl" />
+            </geometry>
+            <material name="arm4_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.0130017 -3.46945e-18 -0.0385551" rpy="0 0 0" />
+            <mass value="0.304573" />
+            <inertia ixx="0.000140255" ixy="0" ixz="1.36899e-06" iyy="0.000182801" iyz="0" izz="6.25553e-05" />
+        </inertial>
+    </link>
+
+    <link name="arm3">
+        <visual>
+            <origin xyz="0.115 0 0.037" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm3.stl" />
+            </geometry>
+            <material name="arm3_material">
+                <color rgba="0.231373 0.380392 0.705882 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.115 0 0.037" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm3.stl" />
+            </geometry>
+            <material name="arm3_material">
+                <color rgba="0.231373 0.380392 0.705882 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0164728 -0.0533065 0.0165" rpy="0 0 0" />
+            <mass value="0.253495" />
+            <inertia ixx="0.000378964" ixy="0.000135069" ixz="0" iyy="0.00020759" iyz="0" izz="0.000429282" />
+        </inertial>
+    </link>
+
+    <link name="arm2">
+        <visual>
+            <origin xyz="0.0633934 -0.0959494 -0.036" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm2.stl" />
+            </geometry>
+            <material name="arm2_material">
+                <color rgba="0.768627 0.886275 0.952941 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0633934 -0.0959494 -0.036" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm2.stl" />
+            </geometry>
+            <material name="arm2_material">
+                <color rgba="0.768627 0.886275 0.952941 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0535692 0.0124398 -0.0155" rpy="0 0 0" />
+            <mass value="0.582673" />
+            <inertia ixx="0.000143067" ixy="-8.86254e-05" ixz="0" iyy="0.00111301" iyz="0" izz="0.00114357" />
+        </inertial>
+    </link>
+
+    <link name="arm1">
+        <visual>
+            <origin xyz="-0.0452202 0.106044 0.037" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm1.stl" />
+            </geometry>
+            <material name="arm1_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0452202 0.106044 0.037" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm1.stl" />
+            </geometry>
+            <material name="arm1_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0422881 0.0309098 0.0165" rpy="0 0 0" />
+            <mass value="0.226307" />
+            <inertia ixx="0.000293317" ixy="-0.000172327" ixz="0" iyy="0.000261614" iyz="0" izz="0.000421982" />
+        </inertial>
+    </link>
+
+    <joint name="joint112" type="revolute">
+        <origin xyz="0.108614 0.0100944 0.001" rpy="3.14159 -0 0" />
+        <parent link="arm2" />
+        <child link="arm1" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint123" type="revolute">
+        <origin xyz="0.0516066 -0.0959494 0.001" rpy="3.14159 -0 0" />
+        <parent link="arm3" />
+        <child link="arm2" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint134" type="revolute">
+        <origin xyz="0 0.0165 -0.055" rpy="1.5708 -1.5708 0" />
+        <parent link="arm4" />
+        <child link="arm3" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint145" type="revolute">
+        <origin xyz="-0.0135 0 0.019" rpy="-3.14159 -1.5708 0" />
+        <parent link="arm5" />
+        <child link="arm4" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint15" type="revolute">
+        <origin xyz="0.034997 0.0457836 0.0240996" rpy="3.14159 -0 -1.5708" />
+        <parent link="part_1" />
+        <child link="arm5" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <link name="arm5_2">
+        <visual>
+            <origin xyz="0.0455 -0.0205 0.019" rpy="-1.5708 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm5.stl" />
+            </geometry>
+            <material name="arm5_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0455 -0.0205 0.019" rpy="-1.5708 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm5.stl" />
+            </geometry>
+            <material name="arm5_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.00577778 0 0.019" rpy="0 0 0" />
+            <mass value="0.0156937" />
+            <inertia ixx="5.06341e-06" ixy="0" ixz="0" iyy="5.35559e-06" iyz="0" izz="1.92694e-06" />
+        </inertial>
+    </link>
+
+    <link name="arm4_2">
+        <visual>
+            <origin xyz="0 -0.0205 0.06" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package:///arm4.stl" />
+            </geometry>
+            <material name="arm4_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.0205 0.06" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package:///arm4.stl" />
+            </geometry>
+            <material name="arm4_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.0130017 -6.93889e-18 -0.0385551" rpy="0 0 0" />
+            <mass value="0.304573" />
+            <inertia ixx="0.000140255" ixy="0" ixz="1.36899e-06" iyy="0.000182801" iyz="0" izz="6.25553e-05" />
+        </inertial>
+    </link>
+
+    <link name="arm3_2">
+        <visual>
+            <origin xyz="0.115 0 -0.004" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm3.stl" />
+            </geometry>
+            <material name="arm3_material">
+                <color rgba="0.231373 0.380392 0.705882 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.115 0 -0.004" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm3.stl" />
+            </geometry>
+            <material name="arm3_material">
+                <color rgba="0.231373 0.380392 0.705882 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0164728 0.0533065 0.0165" rpy="0 0 0" />
+            <mass value="0.253495" />
+            <inertia ixx="0.000378964" ixy="-0.000135069" ixz="0" iyy="0.00020759" iyz="0" izz="0.000429282" />
+        </inertial>
+    </link>
+
+    <link name="arm2_2">
+        <visual>
+            <origin xyz="0.0633934 0.0959494 0.005" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm2.stl" />
+            </geometry>
+            <material name="arm2_material">
+                <color rgba="0.768627 0.886275 0.952941 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0633934 0.0959494 0.005" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm2.stl" />
+            </geometry>
+            <material name="arm2_material">
+                <color rgba="0.768627 0.886275 0.952941 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0535692 -0.0124398 -0.0155" rpy="0 0 0" />
+            <mass value="0.582673" />
+            <inertia ixx="0.000143067" ixy="8.86254e-05" ixz="0" iyy="0.00111301" iyz="0" izz="0.00114357" />
+        </inertial>
+    </link>
+
+    <link name="arm1_2">
+        <visual>
+            <origin xyz="-0.0452202 -0.106044 -0.004" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm1.stl" />
+            </geometry>
+            <material name="arm1_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0452202 -0.106044 -0.004" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm1.stl" />
+            </geometry>
+            <material name="arm1_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0422881 -0.0309098 0.0165" rpy="0 0 0" />
+            <mass value="0.226307" />
+            <inertia ixx="0.000293317" ixy="0.000172327" ixz="0" iyy="0.000261614" iyz="0" izz="0.000421982" />
+        </inertial>
+    </link>
+
+    <joint name="joint212" type="revolute">
+        <origin xyz="0.108614 -0.0100944 0.001" rpy="3.14159 -0 0" />
+        <parent link="arm2_2" />
+        <child link="arm1_2" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint223" type="revolute">
+        <origin xyz="0.0516066 0.0959494 0.001" rpy="3.14159 -0 0" />
+        <parent link="arm3_2" />
+        <child link="arm2_2" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint234" type="revolute">
+        <origin xyz="0 -0.0165 -0.055" rpy="-1.5708 -1.5708 0" />
+        <parent link="arm4_2" />
+        <child link="arm3_2" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint245" type="revolute">
+        <origin xyz="-0.0135 -6.93889e-18 0.019" rpy="-3.14159 -1.5708 0" />
+        <parent link="arm5_2" />
+        <child link="arm4_2" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint25" type="revolute">
+        <origin xyz="-0.045003 0.0457836 0.0240996" rpy="3.14159 -0 -1.5708" />
+        <parent link="part_1" />
+        <child link="arm5_2" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <link name="arm5_3">
+        <visual>
+            <origin xyz="0.0455 -0.0205 0.019" rpy="-1.5708 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm5.stl" />
+            </geometry>
+            <material name="arm5_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0455 -0.0205 0.019" rpy="-1.5708 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm5.stl" />
+            </geometry>
+            <material name="arm5_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.00577778 0 0.019" rpy="0 0 0" />
+            <mass value="0.0156937" />
+            <inertia ixx="5.06341e-06" ixy="0" ixz="0" iyy="5.35559e-06" iyz="0" izz="1.92694e-06" />
+        </inertial>
+    </link>
+
+    <link name="arm4_3">
+        <visual>
+            <origin xyz="0 -0.0205 0.06" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package:///arm4.stl" />
+            </geometry>
+            <material name="arm4_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.0205 0.06" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package:///arm4.stl" />
+            </geometry>
+            <material name="arm4_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.0130017 -3.46945e-18 -0.0385551" rpy="0 0 0" />
+            <mass value="0.304573" />
+            <inertia ixx="0.000140255" ixy="0" ixz="1.36899e-06" iyy="0.000182801" iyz="0" izz="6.25553e-05" />
+        </inertial>
+    </link>
+
+    <link name="arm3_3">
+        <visual>
+            <origin xyz="0.115 0 0.037" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm3.stl" />
+            </geometry>
+            <material name="arm3_material">
+                <color rgba="0.231373 0.380392 0.705882 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.115 0 0.037" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm3.stl" />
+            </geometry>
+            <material name="arm3_material">
+                <color rgba="0.231373 0.380392 0.705882 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0164728 -0.0533065 0.0165" rpy="0 0 0" />
+            <mass value="0.253495" />
+            <inertia ixx="0.000378964" ixy="0.000135069" ixz="0" iyy="0.00020759" iyz="0" izz="0.000429282" />
+        </inertial>
+    </link>
+
+    <link name="arm2_3">
+        <visual>
+            <origin xyz="0.0633934 -0.0959494 -0.036" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm2.stl" />
+            </geometry>
+            <material name="arm2_material">
+                <color rgba="0.768627 0.886275 0.952941 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0633934 -0.0959494 -0.036" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm2.stl" />
+            </geometry>
+            <material name="arm2_material">
+                <color rgba="0.768627 0.886275 0.952941 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0535692 0.0124398 -0.0155" rpy="0 0 0" />
+            <mass value="0.582673" />
+            <inertia ixx="0.000143067" ixy="-8.86254e-05" ixz="0" iyy="0.00111301" iyz="0" izz="0.00114357" />
+        </inertial>
+    </link>
+
+    <link name="arm1_3">
+        <visual>
+            <origin xyz="-0.0452202 0.106044 0.037" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm1.stl" />
+            </geometry>
+            <material name="arm1_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0452202 0.106044 0.037" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm1.stl" />
+            </geometry>
+            <material name="arm1_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0422881 0.0309098 0.0165" rpy="0 0 0" />
+            <mass value="0.226307" />
+            <inertia ixx="0.000293317" ixy="-0.000172327" ixz="0" iyy="0.000261614" iyz="0" izz="0.000421982" />
+        </inertial>
+    </link>
+
+    <joint name="joint312" type="revolute">
+        <origin xyz="0.108614 0.0100944 0.001" rpy="3.14159 -0 0" />
+        <parent link="arm2_3" />
+        <child link="arm1_3" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint323" type="revolute">
+        <origin xyz="0.0516066 -0.0959494 0.001" rpy="3.14159 -0 0" />
+        <parent link="arm3_3" />
+        <child link="arm2_3" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint334" type="revolute">
+        <origin xyz="0 0.0165 -0.055" rpy="1.5708 -1.5708 0" />
+        <parent link="arm4_3" />
+        <child link="arm3_3" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint345" type="revolute">
+        <origin xyz="-0.0135 0 0.019" rpy="-0 1.5708 0" />
+        <parent link="arm5_3" />
+        <child link="arm4_3" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint35" type="revolute">
+        <origin xyz="0.034997 -0.0304068 0.0240996" rpy="3.14159 -0 1.5708" />
+        <parent link="part_1" />
+        <child link="arm5_3" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <link name="arm5_4">
+        <visual>
+            <origin xyz="0.0455 -0.0205 0.019" rpy="-1.5708 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm5.stl" />
+            </geometry>
+            <material name="arm5_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0455 -0.0205 0.019" rpy="-1.5708 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm5.stl" />
+            </geometry>
+            <material name="arm5_material">
+                <color rgba="0.647059 0.647059 0.647059 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.00577778 0 0.019" rpy="0 0 0" />
+            <mass value="0.0156937" />
+            <inertia ixx="5.06341e-06" ixy="0" ixz="0" iyy="5.35559e-06" iyz="0" izz="1.92694e-06" />
+        </inertial>
+    </link>
+
+    <link name="arm4_4">
+        <visual>
+            <origin xyz="0 -0.0205 0.06" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package:///arm4.stl" />
+            </geometry>
+            <material name="arm4_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 -0.0205 0.06" rpy="-1.5708 -1.5708 0" />
+            <geometry>
+                <mesh filename="package:///arm4.stl" />
+            </geometry>
+            <material name="arm4_material">
+                <color rgba="0.972549 0.529412 0.00392157 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="-0.0130017 -6.93889e-18 -0.0385551" rpy="0 0 0" />
+            <mass value="0.304573" />
+            <inertia ixx="0.000140255" ixy="0" ixz="1.36899e-06" iyy="0.000182801" iyz="0" izz="6.25553e-05" />
+        </inertial>
+    </link>
+
+    <link name="arm3_4">
+        <visual>
+            <origin xyz="0.115 0 -0.004" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm3.stl" />
+            </geometry>
+            <material name="arm3_material">
+                <color rgba="0.231373 0.380392 0.705882 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.115 0 -0.004" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm3.stl" />
+            </geometry>
+            <material name="arm3_material">
+                <color rgba="0.231373 0.380392 0.705882 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0164728 0.0533065 0.0165" rpy="0 0 0" />
+            <mass value="0.253495" />
+            <inertia ixx="0.000378964" ixy="-0.000135069" ixz="0" iyy="0.00020759" iyz="0" izz="0.000429282" />
+        </inertial>
+    </link>
+
+    <link name="arm2_4">
+        <visual>
+            <origin xyz="0.0633934 0.0959494 0.005" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm2.stl" />
+            </geometry>
+            <material name="arm2_material">
+                <color rgba="0.768627 0.886275 0.952941 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0633934 0.0959494 0.005" rpy="3.14159 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm2.stl" />
+            </geometry>
+            <material name="arm2_material">
+                <color rgba="0.768627 0.886275 0.952941 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0535692 -0.0124398 -0.0155" rpy="0 0 0" />
+            <mass value="0.582673" />
+            <inertia ixx="0.000143067" ixy="8.86254e-05" ixz="0" iyy="0.00111301" iyz="0" izz="0.00114357" />
+        </inertial>
+    </link>
+
+    <link name="arm1_4">
+        <visual>
+            <origin xyz="-0.0452202 -0.106044 -0.004" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm1.stl" />
+            </geometry>
+            <material name="arm1_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="-0.0452202 -0.106044 -0.004" rpy="0 -0 0" />
+            <geometry>
+                <mesh filename="package:///arm1.stl" />
+            </geometry>
+            <material name="arm1_material">
+                <color rgba="0.917647 0.917647 0.917647 1.0" />
+            </material>
+        </collision>
+        <inertial>
+            <origin xyz="0.0422881 -0.0309098 0.0165" rpy="0 0 0" />
+            <mass value="0.226307" />
+            <inertia ixx="0.000293317" ixy="0.000172327" ixz="0" iyy="0.000261614" iyz="0" izz="0.000421982" />
+        </inertial>
+    </link>
+
+    <joint name="joint412" type="revolute">
+        <origin xyz="0.108614 -0.0100944 0.001" rpy="3.14159 -0 0" />
+        <parent link="arm2_4" />
+        <child link="arm1_4" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint423" type="revolute">
+        <origin xyz="0.0516066 0.0959494 0.001" rpy="3.14159 -0 0" />
+        <parent link="arm3_4" />
+        <child link="arm2_4" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint434" type="revolute">
+        <origin xyz="0 -0.0165 -0.055" rpy="-1.5708 -1.5708 0" />
+        <parent link="arm4_4" />
+        <child link="arm3_4" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint445" type="revolute">
+        <origin xyz="-0.0135 0 0.019" rpy="-0 1.5708 0" />
+        <parent link="arm5_4" />
+        <child link="arm4_4" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+    <joint name="joint45" type="revolute">
+        <origin xyz="-0.045003 -0.0304068 0.0240996" rpy="3.14159 -0 1.5708" />
+        <parent link="part_1" />
+        <child link="arm5_4" />
+        <axis xyz="0 0 1" />
+        <limit effort="1" velocity="20" />
+        <joint_properties friction="0.0" />
+    </joint>
+
+
+</robot>

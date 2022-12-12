@@ -1,0 +1,142 @@
+<mujoco model="onshape">
+  <compiler angle="radian" autolimits="true" />
+  <size />
+  <default />
+  <asset>
+    <mesh name="part_1" file="part_1.stl" />
+    <mesh name="arm5" file="arm5.stl" />
+    <mesh name="arm4" file="arm4.stl" />
+    <mesh name="arm3" file="arm3.stl" />
+    <mesh name="arm2" file="arm2.stl" />
+    <mesh name="arm1" file="arm1.stl" />
+  </asset>
+  <worldbody>
+    <body name="part_1" pos="0 0 0">
+      <freejoint />
+      <inertial pos="0.0499504 -0.243547 0.490316" quat="0 0.732218 0 0.68107" mass="1.4693" diaginertia="0.00314375 0.00226565 0.00119547" />
+      <geom pos="0.0486492 -0.243547 0.472363" quat="0.999346 0 0.0361667 0" type="mesh" rgba="0.231373 0.380392 0.705882 1" mesh="part_1" />
+      <body name="arm5" pos="0.0113562 -0.205451 0.51116" quat="0.0255749 0.706643 -0.706645 -0.025575">
+        <inertial pos="-0.00577778 0 0.019" quat="0.707107 0 0 0.707107" mass="0.0156937" diaginertia="5.35559e-06 5.06341e-06 1.92694e-06" />
+        <joint name="joint_1" pos="0 0 0" axis="0 0 1" range="-1.5708 0" />
+        <geom pos="0.0455 0.0205 0.019" quat="0.707105 0.707108 0 0" type="mesh" rgba="0.647059 0.647059 0.647059 1" mesh="arm5" />
+        <body name="arm4" pos="-0.0145 0 0.019" quat="9.38184e-07 -0.707105 -9.38187e-07 -0.707108">
+          <inertial pos="-0.0130017 0 -0.0385551" quat="0.707079 -0.0062266 -0.0062266 0.707079" mass="0.304573" diaginertia="0.000182801 0.000140279 6.25312e-05" />
+          <joint name="joint_14" pos="0 0 0" axis="0 0 1" range="-3.14159 0" />
+          <geom pos="0 -0.0205 0.06" quat="0.499998 -0.5 -0.5 -0.500002" type="mesh" rgba="0.972549 0.529412 0.00392157 1" mesh="arm4" />
+          <body name="arm3" pos="0 -0.0165 -0.055" quat="0.697691 -0.697693 -0.115005 -0.115005">
+            <inertial pos="0.0164728 0.0533065 0.0165" quat="0.684885 0.684885 -0.175878 -0.175878" mass="0.253495" diaginertia="0.000453233 0.000429282 0.000133321" />
+            <joint name="joint_13" pos="0 0 0" axis="0 0 1" range="0 1.5708" />
+            <geom pos="0.115 0 -0.004" type="mesh" rgba="0.231373 0.380392 0.705882 1" mesh="arm3" />
+            <body name="arm2" pos="0.0516066 0.0959494 0.001" quat="1.32033e-06 0.995124 -0.0986279 -1.30859e-07">
+              <inertial pos="0.0535692 -0.0124398 -0.0155" quat="0.0319414 0.706385 -0.0319414 0.706385" mass="0.582673" diaginertia="0.00114357 0.00112104 0.000135036" />
+              <joint name="joint_12" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" />
+              <geom pos="0.0633934 0.0959494 0.005" quat="1.32679e-06 -1 0 0" type="mesh" rgba="0.768627 0.886275 0.952941 1" mesh="arm2" />
+              <body name="arm1" pos="0.108614 -0.0100944 0.001" quat="1.26743e-06 0.955259 -0.295771 -3.92427e-07">
+                <inertial pos="0.0422881 -0.0309098 0.0165" quat="0.659314 0.659314 0.255547 0.255547" mass="0.226307" diaginertia="0.00045052 0.000421982 0.000104411" />
+                <joint name="joint_11" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" />
+                <geom pos="-0.0452202 -0.106044 -0.004" type="mesh" rgba="0.917647 0.917647 0.917647 1" mesh="arm1" />
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="arm5_2" pos="0.0911469 -0.205451 0.505377" quat="0.0286831 0.608749 -0.792538 -0.0220317">
+        <inertial pos="-0.00577778 0 0.019" quat="0.707107 0 0 0.707107" mass="0.0156937" diaginertia="5.35559e-06 5.06341e-06 1.92694e-06" />
+        <joint name="joint_2" pos="0 0 0" axis="0 0 1" range="0 1.5708" />
+        <geom pos="0.0455 -0.0205 0.019" quat="0.707105 -0.707108 0 0" type="mesh" rgba="0.647059 0.647059 0.647059 1" mesh="arm5" />
+        <body name="arm4_2" pos="-0.0145 0 0.019" quat="0.0281563 -0.706546 0.0281614 -0.706546">
+          <inertial pos="-0.0130017 0 -0.0385551" quat="0.707079 -0.0062266 -0.0062266 0.707079" mass="0.304573" diaginertia="0.000182801 0.000140279 6.25312e-05" />
+          <joint name="joint_24" pos="0 0 0" axis="0 0 1" range="-3.14159 -0.0174533" />
+          <geom pos="0 -0.0205 0.06" quat="0.499998 -0.5 -0.5 -0.500002" type="mesh" rgba="0.972549 0.529412 0.00392157 1" mesh="arm4" />
+          <body name="arm3_2" pos="0 0.0165 -0.055" quat="0.692929 0.692932 -0.14088 0.140881">
+            <inertial pos="0.0164728 -0.0533065 0.0165" quat="0.684885 0.684885 0.175878 0.175878" mass="0.253495" diaginertia="0.000453233 0.000429282 0.000133321" />
+            <joint name="joint_23" pos="0 0 0" axis="0 0 1" range="-1.5708 0" />
+            <geom pos="0.115 0 0.037" quat="1.32679e-06 1 0 0" type="mesh" rgba="0.231373 0.380392 0.705882 1" mesh="arm3" />
+            <body name="arm2_2" pos="0.0516066 -0.0959494 0.001" quat="1.32027e-06 0.995086 0.0990185 1.31377e-07">
+              <inertial pos="0.0535692 0.0124398 -0.0155" quat="-0.0319414 0.706385 0.0319414 0.706385" mass="0.582673" diaginertia="0.00114357 0.00112104 0.000135036" />
+              <joint name="joint_22" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" />
+              <geom pos="0.0633934 -0.0959494 -0.036" type="mesh" rgba="0.768627 0.886275 0.952941 1" mesh="arm2" />
+              <body name="arm1_2" pos="0.108614 0.0100944 0.001" quat="1.14906e-06 -0.866045 -0.499966 6.63353e-07">
+                <inertial pos="0.0422881 0.0309098 0.0165" quat="0.659314 0.659314 -0.255547 -0.255547" mass="0.226307" diaginertia="0.00045052 0.000421982 0.000104411" />
+                <joint name="joint_21" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" />
+                <geom pos="-0.0452202 0.106044 0.037" quat="1.32679e-06 1 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 1" mesh="arm1" />
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="arm5_3" pos="0.0113562 -0.281642 0.51116" quat="0.0255749 -0.706643 -0.706645 0.025575">
+        <inertial pos="-0.00577778 0 0.019" quat="0.707107 0 0 0.707107" mass="0.0156937" diaginertia="5.35559e-06 5.06341e-06 1.92694e-06" />
+        <joint name="joint_3" pos="0 0 0" axis="0 0 1" range="0 1.5708" />
+        <geom pos="0.0455 -0.0205 0.019" quat="0.707105 -0.707108 0 0" type="mesh" rgba="0.647059 0.647059 0.647059 1" mesh="arm5" />
+        <body name="arm4_3" pos="-0.0145 0 0.019" quat="0.00771049 -0.707065 0.00771568 -0.707065">
+          <inertial pos="-0.0130017 0 -0.0385551" quat="0.707079 -0.0062266 -0.0062266 0.707079" mass="0.304573" diaginertia="0.000182801 0.000140279 6.25312e-05" />
+          <joint name="joint_34" pos="0 0 0" axis="0 0 1" range="-3.14159 0" />
+          <geom pos="0 -0.0205 0.06" quat="0.499998 -0.5 -0.5 -0.500002" type="mesh" rgba="0.972549 0.529412 0.00392157 1" mesh="arm4" />
+          <body name="arm3_3" pos="0 0.0165 -0.055" quat="0.700955 0.700958 -0.0930597 0.0930601">
+            <inertial pos="0.0164728 -0.0533065 0.0165" quat="0.684885 0.684885 0.175878 0.175878" mass="0.253495" diaginertia="0.000453233 0.000429282 0.000133321" />
+            <joint name="joint_33" pos="0 0 0" axis="0 0 1" range="-1.5708 0" />
+            <geom pos="0.115 0 0.037" quat="1.32679e-06 -1 0 0" type="mesh" rgba="0.231373 0.380392 0.705882 1" mesh="arm3" />
+            <body name="arm2_3" pos="0.0516066 -0.0959494 0.001" quat="1.3069e-06 0.985009 -0.172504 -2.28878e-07">
+              <inertial pos="0.0535692 0.0124398 -0.0155" quat="-0.0319414 0.706385 0.0319414 0.706385" mass="0.582673" diaginertia="0.00114357 0.00112104 0.000135036" />
+              <joint name="joint_32" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" />
+              <geom pos="0.0633934 -0.0959494 -0.036" type="mesh" rgba="0.768627 0.886275 0.952941 1" mesh="arm2" />
+              <body name="arm1_3" pos="0.108614 0.0100944 0.001" quat="1.32678e-06 -0.999988 0.00496011 -6.58107e-09">
+                <inertial pos="0.0422881 0.0309098 0.0165" quat="0.659314 0.659314 -0.255547 -0.255547" mass="0.226307" diaginertia="0.00045052 0.000421982 0.000104411" />
+                <joint name="joint_31" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" />
+                <geom pos="-0.0452202 0.106044 0.037" quat="1.32679e-06 -1 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 1" mesh="arm1" />
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+      <body name="arm5_4" pos="0.0911469 -0.281642 0.505377" quat="0.0255749 -0.706643 -0.706645 0.025575">
+        <inertial pos="-0.00577778 0 0.019" quat="0.707107 0 0 0.707107" mass="0.0156937" diaginertia="5.35559e-06 5.06341e-06 1.92694e-06" />
+        <joint name="joint_4" pos="0 0 0" axis="0 0 1" range="-1.5708 0" />
+        <geom pos="0.0455 -0.0205 0.019" quat="0.707105 -0.707108 0 0" type="mesh" rgba="0.647059 0.647059 0.647059 1" mesh="arm5" />
+        <body name="arm4_4" pos="-0.0145 0 0.019" quat="0.0311058 0.706422 0.031111 0.706422">
+          <inertial pos="-0.0130017 0 -0.0385551" quat="0.707079 -0.0062266 -0.0062266 0.707079" mass="0.304573" diaginertia="0.000182801 0.000140279 6.25312e-05" />
+          <joint name="joint_44" pos="0 0 0" axis="0 0 1" range="0 3.14159" />
+          <geom pos="0 -0.0205 0.06" quat="0.499998 -0.5 -0.5 -0.500002" type="mesh" rgba="0.972549 0.529412 0.00392157 1" mesh="arm4" />
+          <body name="arm3_4" pos="0 0.0165 -0.055" quat="0.707066 0.707069 -0.00743738 0.0074374">
+            <inertial pos="0.0164728 -0.0533065 0.0165" quat="0.684885 0.684885 0.175878 0.175878" mass="0.253495" diaginertia="0.000453233 0.000429282 0.000133321" />
+            <joint name="joint_43" pos="0 0 0" axis="0 0 1" range="-1.5708 0" />
+            <geom pos="0.115 0 0.037" quat="1.32679e-06 -1 0 0" type="mesh" rgba="0.231373 0.380392 0.705882 1" mesh="arm3" />
+            <body name="arm2_4" pos="0.0516066 -0.0959494 0.001" quat="1.26661e-06 0.954642 -0.297757 -3.95063e-07">
+              <inertial pos="0.0535692 0.0124398 -0.0155" quat="-0.0319414 0.706385 0.0319414 0.706385" mass="0.582673" diaginertia="0.00114357 0.00112104 0.000135036" />
+              <joint name="joint_42" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" />
+              <geom pos="0.0633934 -0.0959494 -0.036" type="mesh" rgba="0.768627 0.886275 0.952941 1" mesh="arm2" />
+              <body name="arm1_4" pos="0.108614 0.0100944 0.001" quat="1.18379e-06 -0.892218 0.451605 -5.99187e-07">
+                <inertial pos="0.0422881 0.0309098 0.0165" quat="0.659314 0.659314 -0.255547 -0.255547" mass="0.226307" diaginertia="0.00045052 0.000421982 0.000104411" />
+                <joint name="joint_41" pos="0 0 0" axis="0 0 1" range="-1.0472 1.0472" />
+                <geom pos="-0.0452202 0.106044 0.037" quat="1.32679e-06 1 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 1" mesh="arm1" />
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <motor name="joint_1" gear="1" joint="joint_1" />
+    <motor name="joint_2" gear="1" joint="joint_2" />
+    <motor name="joint_3" gear="1" joint="joint_3" />
+    <motor name="joint_4" gear="1" joint="joint_4" />
+    <motor name="joint_11" gear="1" joint="joint_11" />
+    <motor name="joint_12" gear="1" joint="joint_12" />
+    <motor name="joint_13" gear="1" joint="joint_13" />
+    <motor name="joint_14" gear="1" joint="joint_14" />
+    <motor name="joint_21" gear="1" joint="joint_21" />
+    <motor name="joint_22" gear="1" joint="joint_22" />
+    <motor name="joint_23" gear="1" joint="joint_23" />
+    <motor name="joint_24" gear="1" joint="joint_24" />
+    <motor name="joint_31" gear="1" joint="joint_31" />
+    <motor name="joint_32" gear="1" joint="joint_32" />
+    <motor name="joint_33" gear="1" joint="joint_33" />
+    <motor name="joint_34" gear="1" joint="joint_34" />
+    <motor name="joint_41" gear="1" joint="joint_41" />
+    <motor name="joint_42" gear="1" joint="joint_42" />
+    <motor name="joint_43" gear="1" joint="joint_43" />
+    <motor name="joint_44" gear="1" joint="joint_44" />
+  </actuator>
+</mujoco>

@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc ../lib/libfixture.a CMakeFiles/fixture.dir/fixture.cc.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib ../lib/libfixture.a

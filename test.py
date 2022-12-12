@@ -1,19 +1,10 @@
-#get keyboard input from screen
-import pygame
-import time
-pygame.init()
-while True:
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            pygame.quit()
-            quit()
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_LEFT:
-                print("left")
-            elif event.key == pygame.K_RIGHT:
-                print("right")
-            elif event.key == pygame.K_UP:
-                print("up")
-            elif event.key == pygame.K_DOWN:
-                print("down")
-        time.sleep(0.1)
+import mujoco
+import gym
+
+env = gym.make("HalfCheetah-v4", render_mode="rgb_array")
+env.reset()
+
+for _ in range(100000):
+    env.render()
+    env.step(env.action_space.sample()) # take a random action
+env.close()
