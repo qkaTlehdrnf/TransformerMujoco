@@ -22,7 +22,7 @@ class XiaoTianEnv(MujocoEnv, utils.EzPickle):
 
     def __init__(
         self,
-        xml_file="/Users/qkatlehdrnf/SynologyDrive/github/opai_ros/custom_env/assets/scene.xml",
+        xml_file="/home/wonjoong/SynologyDrive/opai_ros/custom_env/assets/scene.xml",
         ctrl_cost_weight=0.5,
         use_contact_forces=False,
         contact_cost_weight=5e-4,
